@@ -18,29 +18,7 @@ The system orchestrates **Excel Online** (as a relational database), **Power Aut
 
 The system utilizes high-level concurrency to process multiple sales orders simultaneously rather than linearly.
 
-```mermaid
-graph TD
-    subgraph "Data Layer (Excel)"
-    A[Sales Orders Excel] -->|Trigger| B
-    end
-    
-    subgraph "Logic Layer (Power Automate)"
-    B{Concurrency Control} 
-    B -->|Thread 1| C[Get Client Data]
-    B -->|Thread 2| C
-    B -->|Thread 50...| C
-    C --> D{Tax & Language Logic}
-    D --> E[Populate Template]
-    E --> F[Convert to PDF]
-    end
-    
-    subgraph "Storage & Output"
-    F --> G[SharePoint: PDF Archive]
-    F --> H[SharePoint: Excel Backup]
-    G --> I[Automated Email]
-    H --> J[Accounting Ledger Update]
-    end
-```
+![Invoice Generator Architecture](invoice_generator/INVOICE GENERATOR ARCHITECTURE.png)
 
 ### Key Technical Features
 * **Mass Concurrency:** Configured to run up to 50 parallel threads. Batch processing time (50 invoices): **< 2 minutes**.
