@@ -18,7 +18,7 @@ The system orchestrates **Excel Online** (as a relational database), **Power Aut
 
 The system utilizes high-level concurrency to process multiple sales orders simultaneously rather than linearly.
 
-![Invoice Generator Architecture](invoice_generator/assets/INVOICE GENERATOR ARCHITECTURE.png)
+![Invoice Generator Architecture](INVOICE GENERATOR ARCHITECTURE.png)
 
 ### Key Technical Features
 * **Mass Concurrency:** Configured to run up to 50 parallel threads. Batch processing time (50 invoices): **< 2 minutes**.
