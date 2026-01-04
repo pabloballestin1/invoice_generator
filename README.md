@@ -46,7 +46,7 @@ The system utilizes high-level concurrency to process multiple sales orders simu
 ### 3. Final Output (Generated Invoice)
 *Sample of a generated invoice, converted to PDF and archived automatically.*
 
-![Invoice Demo](assets/invoice-demo.png)
+![Invoice Demo](EXAMPLE INVOICE.pdf)
 
 ---
 
