@@ -38,15 +38,21 @@ The system utilizes high-level concurrency to process multiple sales orders simu
 
 ![Workflow Overview](assets/flow-overview.png)
 
-### 2. Data Structure (Input)
-*Excel structured as a relational database with data validation to prevent entry errors.*
 
-![Excel Structure](assets/excel-db.png)
-
-### 3. Final Output (Generated Invoice)
+### 2. Final Output (Generated Invoice)
 *Sample of a generated invoice, converted to PDF and archived automatically.*
 
 ![Invoice Demo](INVOICE_EXAMPLE_page-0001.jpg)
+
+
+### 2. Financial Files
+*Excel structured accountability files, created automatically*
+
+
+![Financial files](image.png)
+
+![Financial resume](tabla_gastos.png)
+
 
 ---
 
