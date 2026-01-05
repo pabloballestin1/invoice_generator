@@ -71,7 +71,7 @@ The system utilizes high-level concurrency to process multiple sales orders simu
 While tailored to specific business rules, the core engine can be replicated by importing the flow package:
 
 1. Set up the **SharePoint** document library structure.
-2. Configure **Excel Tables** (Schema included in `/docs`).
+2. Configure **Excel Tables**, templates, etc.
 3. Import the **Power Automate** solution (.zip).
 4. Map **Office 365 connectors** to your environment.
 
